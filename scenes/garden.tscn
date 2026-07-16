@@ -22,7 +22,7 @@
 [ext_resource type="Texture2D" uid="uid://cu2bjdkfi5kel" path="res://resources/garden_sprites/fence_1.png" id="10_vlubd"]
 [ext_resource type="Texture2D" uid="uid://br2v48cwfi30u" path="res://resources/ui_sprites/ui_sprites_1365_14.png" id="11_3txl1"]
 [ext_resource type="Texture2D" uid="uid://iwvseotdci81" path="res://resources/garden_sprites/fence_gate.png" id="11_c4msi"]
-[ext_resource type="Texture2D" uid="uid://drfvchw6jje62" path="res://resources/spritesheets/girl_watering_sheet.png" id="14_d0o5p"]
+[ext_resource type="Texture2D" uid="uid://ckx1lvcop8rv8" path="res://resources/spritesheets/girl_watering_sheet_2.png" id="14_d0o5p"]
 [ext_resource type="Texture2D" uid="uid://bj3un05vsxk5a" path="res://resources/garden_sprites/bush.png" id="23_ricac"]
 
 [sub_resource type="Animation" id="Animation_js7m7"]
@@ -305,7 +305,6 @@ position = Vector2(156.00003, -188.99997)
 scale = Vector2(0.7685548, 0.7685548)
 sprite_frames = SubResource("SpriteFrames_jmadx")
 autoplay = "default"
-frame = 18
 frame_progress = 1.0
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1802007976]
