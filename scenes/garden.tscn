@@ -1,0 +1,391 @@
+[gd_scene format=3 uid="uid://q3dhodk1ghj4"]
+
+[ext_resource type="Texture2D" uid="uid://bae1mmovjwege" path="res://resources/images/garden_field_2.png" id="1_8csfy"]
+[ext_resource type="Texture2D" uid="uid://bji31wutrxw1x" path="res://resources/images/garden_fields.png" id="1_hltfv"]
+[ext_resource type="Texture2D" uid="uid://t6gsg0gefs2e" path="res://resources/images/mountain_background.png" id="2_js7m7"]
+[ext_resource type="Texture2D" uid="uid://ddrv66tevpli4" path="res://resources/references/garden_reference.png" id="2_t3x5t"]
+[ext_resource type="Texture2D" uid="uid://dw2svjvaa2ru6" path="res://resources/ui_sprites/ui_sprites_1365_1.png" id="3_8csfy"]
+[ext_resource type="Texture2D" uid="uid://ddxalmusj8cf0" path="res://resources/garden_sprites/house.png" id="3_ricac"]
+[ext_resource type="Texture2D" uid="uid://bdojexher0apr" path="res://resources/garden_sprites/girl.png" id="4_d0o5p"]
+[ext_resource type="Texture2D" uid="uid://dea81d2ns5mdx" path="res://resources/ui_sprites/ui_sprites_1365_2.png" id="4_dfwg7"]
+[ext_resource type="Texture2D" uid="uid://djha5dava0b2q" path="res://resources/ui_sprites/ui_sprites_1365_11.png" id="5_la7hl"]
+[ext_resource type="Texture2D" uid="uid://dq1n1lnogloft" path="res://resources/garden_sprites/watering_pot.png" id="5_s5y3a"]
+[ext_resource type="Texture2D" uid="uid://dk25mbik85qdk" path="res://resources/ui_sprites/ui_sprites_1365_23.png" id="6_3txl1"]
+[ext_resource type="Texture2D" uid="uid://4qafng3glii8" path="res://resources/garden_sprites/garden_bed_carrot.png" id="6_o0dgr"]
+[ext_resource type="Texture2D" uid="uid://dvriong1v3jwh" path="res://resources/ui_sprites/ui_sprites_1365_18.png" id="7_8csfy"]
+[ext_resource type="Texture2D" uid="uid://glekc3c2waxc" path="res://resources/garden_sprites/garden_bed.png" id="7_wuoq8"]
+[ext_resource type="Texture2D" uid="uid://bs6qdjivomsi3" path="res://resources/garden_sprites/garden_bed_turnip.png" id="8_eqdcu"]
+[ext_resource type="Texture2D" uid="uid://bk7s36ieg4u2h" path="res://resources/ui_sprites/ui_sprites_1365_22.png" id="8_v6x8h"]
+[ext_resource type="Texture2D" uid="uid://cjwttxjyfsw4t" path="res://resources/ui_sprites/ui_sprites_1365_15.png" id="9_dfwg7"]
+[ext_resource type="Texture2D" uid="uid://dl48s2wr2vul" path="res://resources/garden_sprites/fence_2.png" id="9_iawwd"]
+[ext_resource type="Texture2D" uid="uid://bs5ayj6wa7q6y" path="res://resources/ui_sprites/ui_sprites_1365_12.png" id="10_la7hl"]
+[ext_resource type="Texture2D" uid="uid://cu2bjdkfi5kel" path="res://resources/garden_sprites/fence_1.png" id="10_vlubd"]
+[ext_resource type="Texture2D" uid="uid://br2v48cwfi30u" path="res://resources/ui_sprites/ui_sprites_1365_14.png" id="11_3txl1"]
+[ext_resource type="Texture2D" uid="uid://iwvseotdci81" path="res://resources/garden_sprites/fence_gate.png" id="11_c4msi"]
+[ext_resource type="Texture2D" uid="uid://drfvchw6jje62" path="res://resources/spritesheets/girl_watering_sheet.png" id="14_d0o5p"]
+[ext_resource type="Texture2D" uid="uid://bj3un05vsxk5a" path="res://resources/garden_sprites/bush.png" id="23_ricac"]
+
+[sub_resource type="Animation" id="Animation_js7m7"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:scale:y")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [1.0]
+}
+
+[sub_resource type="Animation" id="Animation_ricac"]
+resource_name = "idle"
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:scale:y")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(-0.033333335, 0.25, 0.5, 0.75, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [1.0, 1.02, 1.0, 0.98, 1.0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_d0o5p"]
+_data = {
+&"RESET": SubResource("Animation_js7m7"),
+&"idle": SubResource("Animation_ricac")
+}
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_s5y3a"]
+atlas = ExtResource("14_d0o5p")
+region = Rect2(0, 0, 512, 512)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_o0dgr"]
+atlas = ExtResource("14_d0o5p")
+region = Rect2(512, 0, 512, 512)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wuoq8"]
+atlas = ExtResource("14_d0o5p")
+region = Rect2(1024, 0, 512, 512)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_eqdcu"]
+atlas = ExtResource("14_d0o5p")
+region = Rect2(1536, 0, 512, 512)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_iawwd"]
+atlas = ExtResource("14_d0o5p")
+region = Rect2(2048, 0, 512, 512)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vlubd"]
+atlas = ExtResource("14_d0o5p")
+region = Rect2(0, 512, 512, 512)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_c4msi"]
+atlas = ExtResource("14_d0o5p")
+region = Rect2(512, 512, 512, 512)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_llbuk"]
+atlas = ExtResource("14_d0o5p")
+region = Rect2(1024, 512, 512, 512)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fr55t"]
+atlas = ExtResource("14_d0o5p")
+region = Rect2(1536, 512, 512, 512)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3q564"]
+atlas = ExtResource("14_d0o5p")
+region = Rect2(2048, 512, 512, 512)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1mbgh"]
+atlas = ExtResource("14_d0o5p")
+region = Rect2(0, 1024, 512, 512)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4fd86"]
+atlas = ExtResource("14_d0o5p")
+region = Rect2(512, 1024, 512, 512)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4yw7j"]
+atlas = ExtResource("14_d0o5p")
+region = Rect2(1024, 1024, 512, 512)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yudwb"]
+atlas = ExtResource("14_d0o5p")
+region = Rect2(1536, 1024, 512, 512)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jmvh5"]
+atlas = ExtResource("14_d0o5p")
+region = Rect2(2048, 1024, 512, 512)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_85l0g"]
+atlas = ExtResource("14_d0o5p")
+region = Rect2(0, 1536, 512, 512)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_q88nx"]
+atlas = ExtResource("14_d0o5p")
+region = Rect2(512, 1536, 512, 512)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2dsxd"]
+atlas = ExtResource("14_d0o5p")
+region = Rect2(1024, 1536, 512, 512)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jbxyh"]
+atlas = ExtResource("14_d0o5p")
+region = Rect2(1536, 1536, 512, 512)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_jmadx"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_s5y3a")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_o0dgr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wuoq8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_eqdcu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_iawwd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vlubd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_c4msi")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_llbuk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fr55t")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3q564")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1mbgh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4fd86")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4yw7j")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yudwb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jmvh5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_85l0g")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_q88nx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2dsxd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jbxyh")
+}],
+"loop": true,
+"name": &"default",
+"speed": 12.0
+}]
+
+[node name="Garden" type="Node2D" unique_id=919373355]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1176710417]
+position = Vector2(470, 836)
+texture = ExtResource("1_8csfy")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1525858235]
+position = Vector2(470, 677)
+zoom = Vector2(1.25, 1.25)
+
+[node name="MountainBackground" type="Sprite2D" parent="." unique_id=676271815]
+position = Vector2(470, 836)
+texture = ExtResource("2_js7m7")
+
+[node name="House" type="Sprite2D" parent="MountainBackground" unique_id=484341601]
+position = Vector2(114, -415)
+texture = ExtResource("3_ricac")
+
+[node name="GardenBed" type="Sprite2D" parent="MountainBackground" unique_id=53137025]
+position = Vector2(18, 20)
+texture = ExtResource("7_wuoq8")
+
+[node name="GardenBedTurnip2" type="Sprite2D" parent="MountainBackground" unique_id=1384139652]
+position = Vector2(346.00003, 192.99995)
+scale = Vector2(0.8197111, 0.8197111)
+texture = ExtResource("8_eqdcu")
+
+[node name="GardenBedCarrot" type="Sprite2D" parent="MountainBackground" unique_id=835360907]
+position = Vector2(-277, 13)
+texture = ExtResource("6_o0dgr")
+
+[node name="GardenBedCarrot3" type="Sprite2D" parent="MountainBackground" unique_id=258438820]
+position = Vector2(-277, 13)
+texture = ExtResource("6_o0dgr")
+
+[node name="GardenBedCarrot2" type="Sprite2D" parent="MountainBackground" unique_id=1252388925]
+position = Vector2(-128, 86)
+texture = ExtResource("6_o0dgr")
+
+[node name="GardenBedTurnip" type="Sprite2D" parent="MountainBackground" unique_id=731731791]
+position = Vector2(192, 272)
+scale = Vector2(1, 0.9182692)
+texture = ExtResource("8_eqdcu")
+
+[node name="Fence6" type="Sprite2D" parent="MountainBackground" unique_id=1978420304]
+position = Vector2(-402, 86)
+texture = ExtResource("9_iawwd")
+
+[node name="Fence5" type="Sprite2D" parent="MountainBackground" unique_id=1278884578]
+position = Vector2(-314, 130)
+texture = ExtResource("9_iawwd")
+
+[node name="Fence1" type="Sprite2D" parent="MountainBackground" unique_id=588220783]
+position = Vector2(330.5, 449.5)
+texture = ExtResource("10_vlubd")
+
+[node name="Fence3" type="Sprite2D" parent="MountainBackground" unique_id=1095424466]
+position = Vector2(25, 303)
+texture = ExtResource("9_iawwd")
+
+[node name="Fence4" type="Sprite2D" parent="MountainBackground" unique_id=1092901237]
+position = Vector2(-223, 169)
+texture = ExtResource("9_iawwd")
+
+[node name="Fence2" type="Sprite2D" parent="MountainBackground" unique_id=399085749]
+position = Vector2(114, 339)
+texture = ExtResource("9_iawwd")
+
+[node name="FenceGate" type="Sprite2D" parent="MountainBackground" unique_id=1441390045]
+position = Vector2(-90.5, 244.5)
+scale = Vector2(0.7711268, 0.7711269)
+texture = ExtResource("11_c4msi")
+
+[node name="Girl" type="Sprite2D" parent="MountainBackground" unique_id=464404001]
+position = Vector2(-124.00003, -121.000015)
+texture = ExtResource("4_d0o5p")
+offset = Vector2(-16, -160)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="MountainBackground/Girl" unique_id=598514460]
+libraries/ = SubResource("AnimationLibrary_d0o5p")
+autoplay = &"idle"
+
+[node name="WateringPot" type="Sprite2D" parent="MountainBackground" unique_id=2071462619]
+position = Vector2(-195.99997, -241.99998)
+scale = Vector2(0.6560153, 0.6560153)
+texture = ExtResource("5_s5y3a")
+
+[node name="SceneUI" type="Node2D" parent="MountainBackground" unique_id=1966724551]
+
+[node name="BubbleWater" type="Sprite2D" parent="MountainBackground" unique_id=379702785]
+position = Vector2(-143, -10)
+texture = ExtResource("10_la7hl")
+
+[node name="BubbleGrow" type="Sprite2D" parent="MountainBackground" unique_id=210611046]
+position = Vector2(-289, -76)
+texture = ExtResource("11_3txl1")
+
+[node name="GirlWatering" type="AnimatedSprite2D" parent="MountainBackground" unique_id=1551889247]
+position = Vector2(156.00003, -188.99997)
+scale = Vector2(0.7685548, 0.7685548)
+sprite_frames = SubResource("SpriteFrames_jmadx")
+autoplay = "default"
+frame = 18
+frame_progress = 1.0
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1802007976]
+
+[node name="Reference" type="TextureRect" parent="CanvasLayer" unique_id=855679271]
+visible = false
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 173.0
+offset_bottom = 307.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_t3x5t")
+
+[node name="Calendar" type="TextureRect" parent="CanvasLayer" unique_id=887917149]
+offset_left = 16.0
+offset_top = 25.0
+offset_right = 323.0
+offset_bottom = 196.0
+texture = ExtResource("3_8csfy")
+
+[node name="Credit" type="TextureRect" parent="CanvasLayer" unique_id=843687502]
+offset_left = 636.0
+offset_top = 48.0
+offset_right = 887.0
+offset_bottom = 148.0
+texture = ExtResource("4_dfwg7")
+
+[node name="Task" type="TextureRect" parent="CanvasLayer" unique_id=786069787]
+offset_left = 16.0
+offset_top = 209.0
+offset_right = 327.0
+offset_bottom = 581.0
+texture = ExtResource("5_la7hl")
+
+[node name="InventoryBar" type="TextureRect" parent="CanvasLayer" unique_id=681936606]
+offset_left = 193.0
+offset_top = 1415.0
+offset_right = 847.0
+offset_bottom = 1596.0
+texture = ExtResource("6_3txl1")
+
+[node name="InventoryIcon" type="TextureRect" parent="CanvasLayer" unique_id=795488772]
+offset_left = 46.0
+offset_top = 1276.0
+offset_right = 193.0
+offset_bottom = 1415.0
+texture = ExtResource("7_8csfy")
+
+[node name="MapIcon" type="TextureRect" parent="CanvasLayer" unique_id=669261053]
+offset_left = 46.0
+offset_top = 1462.0
+offset_right = 156.0
+offset_bottom = 1570.0
+texture = ExtResource("8_v6x8h")
+
+[node name="WaterMeter" type="TextureRect" parent="CanvasLayer" unique_id=1144763738]
+offset_left = 847.0
+offset_top = 1175.0
+offset_right = 901.0
+offset_bottom = 1367.0
+texture = ExtResource("9_dfwg7")
+
+[node name="GardenFields" type="Sprite2D" parent="." unique_id=1667995408]
+visible = false
+position = Vector2(1231, 679)
+texture = ExtResource("1_hltfv")
+
+[node name="Bush" type="Sprite2D" parent="." unique_id=1092637482]
+position = Vector2(750, 1276)
+scale = Vector2(1.4570541, 1.4570543)
+texture = ExtResource("23_ricac")
+
+[node name="Bush2" type="Sprite2D" parent="." unique_id=365226304]
+position = Vector2(589, 1462)
+scale = Vector2(1.7856157, 1.7856158)
+texture = ExtResource("23_ricac")
+
+[node name="Bush3" type="Sprite2D" parent="." unique_id=1512816505]
+position = Vector2(870, 1462)
+scale = Vector2(1.7856157, 1.7856158)
+texture = ExtResource("23_ricac")
